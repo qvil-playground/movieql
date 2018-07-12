@@ -23,7 +23,7 @@ export const getMovies = async (limit, rating) => {
 export const getMovie = async id => {
   const {
     data: {
-      data: { movies }
+      data: { movie }
     }
   } = await axios(MOVIE_DETAILS_URL, {
     params: {
